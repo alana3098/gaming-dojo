@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Dojo</title>
+    <style>
+        body {
+            background-image:image('cart-light.png');
+        }
+    </style>
+    <link rel="stylesheet" href="gamingDojo.css">
+</head>
+<body>
+    <div class="nav">
+        <div  class="nav-bar">
+            <h1>Gaming<span>Dojo</span></h1>
+            <label>
+                <select>
+                <option>Euro &#8364;</option>
+                <option>US Dollars &#36;</option>
+                <option>British Pounds &#163;</option>
+            </select>
+            <img src="cart-light.png" alt="cart icon">
+            <!--<span href="#" id="inc" value="0">0</span> -->
+            <input id="inc" value="0"></input> 
+            <img class="search-icon" src="search-light.png">
+            </label>
+            <!--<input class="search"type="text" placeholder="Search.."> -->
+            
+        </div>
+    </div>
+    <div>
+        <input class="back" type="button" onclick="imagefun()" value="&#8592;">
+    </div>
+
+    <div class="highlight-menu">
+        <div class="highlights">
+            <h3>Highlights</h3>
+            <img src="stonepunk.png" id="getImage" alt=" a game">
+            </div>
+            <div>
+                <input class="next" type="button" onclick="imagefun()" value="&#8594;">
+            </div>
+    </div>
+
+    <div class="rows">
+        <div class="games">
+            <img src="stonepunk.png" alt=" a game">
+            <h3>Cafe Neko: Gold Edition</h3>
+            <p>
+            <img class="windows" src="windows.png" >
+            <img class="apple" src="apple.png"> <br>
+            <h4>-20%</h4>
+            <h6 class="old-price">&#8364;14.98</h6> 
+            <h5>&#8364;10.49</h5>
+
+        </p>
+            <button onclick="buttonClick()">Buy</button>
+        </div>
+        <div class="games">
+            <img src="pixel-ninjas-2.png" alt="a game">
+            <h3>Cafe Neko: Gold Edition</h3>
+            <p>
+                <img class="windows" src="windows.png" >
+                <img class="apple" src="apple.png">
+                <h4>-10%</h4>
+                <h6 class="old-price">&#8364;8.19</h6> 
+            <h5>&#8364;7.39</h5>
+
+            </p>
+            <button onclick="buttonClick()">Buy</button>
+        </div>
+        <div class="games">
+            <img src="cafe-neko.png" alt="a game">
+            <h3>Cafe Neko: Gold Edition</h3>
+            <p>
+                <img class="windows" src="windows.png" >
+                <img class="apple" src="apple.png">
+                <img onclick="alert('This game is supported on Linux.')"class="linux" src="linux.png">
+                <h4>NEW</h4>
+            <h5>&#8364;19.99</h5>
+
+            </p>
+            <button onclick="buttonClick()">Buy</button>
+        </div>
+    </div>
+    <script src="gamingDojo.js"></script>
+</body>
+</html>
